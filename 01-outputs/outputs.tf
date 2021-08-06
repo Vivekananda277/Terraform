@@ -1,3 +1,3 @@
 output "out1" {
-  value = "Namasthe Bhai"
+  value = "Namasthe Bhai!"
 }
