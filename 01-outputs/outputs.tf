@@ -6,5 +6,5 @@ variable "Trainings" {
   default = ["DevOps","AWS"]
 }
 output "First-training" {
-  value = var.Trainings
+  value = var.Trainings[0]
 }
