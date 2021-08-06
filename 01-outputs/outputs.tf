@@ -8,3 +8,14 @@ variable "Trainings" {
 output "First-training" {
   value = var.Trainings[0]
 }
+
+variable "Maps" {
+  default = {
+    AWS="6 AM IST"
+    DevOps="9 AM IST"
+  }
+}
+
+output "Timings" {
+  value = "AWS STARTS AT ${var.Maps[DevOps]}"
+}
