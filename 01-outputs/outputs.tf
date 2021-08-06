@@ -17,5 +17,5 @@ variable "Maps" {
 }
 
 output "Timings" {
-  value = "AWS STARTS AT ${var.Maps[DevOps]}"
+  value = "AWS STARTS AT ${var.Maps["DevOps"]}"
 }
