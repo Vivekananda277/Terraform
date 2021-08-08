@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "sample" {
-  ami = "ami-074df373d6bafa625"
+  ami          = "ami-074df373d6bafa625"
   instance_type = "t3.micro"
   tags = {
     Name="sample"
@@ -17,5 +17,6 @@ terraform {
     bucket = "terraform277"
     key    = "sample/terraform.tfstate"
     region = "us-east-1"
-  }
+    dynamodb_table = "terraform"
+ }
 }
