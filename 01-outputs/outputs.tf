@@ -28,5 +28,5 @@ variable "Hertz" {
 }
 
 output "Team-members" {
-  value = "First candidate is ${var.Hertz["Members[0]"]}"
+  value = "First candidate is ${var.Hertz["Team"]}"
 }
