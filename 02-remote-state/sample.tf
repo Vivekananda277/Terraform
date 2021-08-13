@@ -9,10 +9,7 @@ resource "aws_instance" "sample" {
     Name="sample"
   }
 }
-
-
-
-terraform {
+Terraform {
   backend "s3" {
     bucket = "terraform277"
     key    = "sample/terraform.tfstate"
